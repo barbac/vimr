@@ -7,3 +7,6 @@
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "bundle/hexHighlight"]
+	path = bundle/hexHighlight
+	url = https://github.com/vim-scripts/hexHighlight.vim.git

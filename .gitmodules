@@ -10,3 +10,6 @@
 [submodule "bundle/hexHighlight"]
 	path = bundle/hexHighlight
 	url = https://github.com/vim-scripts/hexHighlight.vim.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git

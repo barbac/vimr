@@ -13,8 +13,6 @@ set fileformats=unix,dos
 set wildmenu
 set wildmode=longest:full,full
 
-autocmd BufNewFile,BufRead *.md set filetype=markdown
-
 
 "indentation
 set expandtab

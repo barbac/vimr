@@ -1,0 +1,17 @@
+snippet t "Simpe tag"
+<$1>$0</${1/(\w+).*/$1/}>
+endsnippet
+
+snippet # "Div with id"
+<div id="$1">
+  $0
+</div><!-- #$1 -->
+endsnippet
+
+snippet . "Class attribute"
+class="$1"$0
+endsnippet
+
+snippet = "Attribute"
+$1="$2"$0
+endsnippet

@@ -22,7 +22,7 @@ set autoindent
 "
 "this should remove any extra white space
 "on the document before saving
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd! BufWritePre * :%s/\s\+$//e
 
 "fonts and colors
 if has("unix")
@@ -63,4 +63,4 @@ noremap <leader>l :ls<CR>:b<space>
 
 
 "Run a script to run tests on save
-autocmd BufWritePost * silent !tmux send-keys -t 0 testme C-m
+autocmd! BufWritePost * silent !tmux send-keys -t 0 testme C-m

@@ -6,7 +6,7 @@ execute pathogen#infect()
 "options
 set nocompatible
 filetype plugin indent on
-set number
+set relativenumber
 set nobackup
 set autochdir "current file's path as working directory
 set fileformats=unix,dos

@@ -25,13 +25,15 @@ set autoindent
 autocmd! BufWritePre * :%s/\s\+$//e
 
 "fonts and colors
+syntax on
+colorscheme jellybeans
+
 if has("unix")
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ 11
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ 12
 elseif has("win32")
     set guifont=Consolas:h11:cANSI
 endif
 
-syntax on
 
 
 "search

@@ -22,3 +22,7 @@
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 	branch = master
+[submodule "bundle/jellybeans"]
+	path = bundle/jellybeans
+	url = https://github.com/nanotech/jellybeans.vim.git
+	branch = master

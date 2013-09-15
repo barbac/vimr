@@ -7,6 +7,7 @@ execute pathogen#infect()
 set nocompatible
 filetype plugin indent on
 set relativenumber
+set number "Current line will display its real number.
 set nobackup
 set autochdir "current file's path as working directory
 set fileformats=unix,dos

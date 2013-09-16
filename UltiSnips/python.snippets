@@ -3,10 +3,50 @@ for ${1:var} in ${2:iterator}:
     $0
 endsnippet
 
+snippet "\[(.+) sl" "String list" r
+`!p
+items = match.group(1).split(' ')
+new_list = []
+for item in items:
+    new_list.append("'{0}'".format(item))
+snip.rv = '[' + ', '.join(new_list)
+`
+endsnippet
+
 snippet di "Dictionary" !b
 ${1:dictName} = {$0}
 endsnippet
 
 snippet d "Dictionary key-value pair" i
-'${1:name}': '${2:value}'$0
+'${1:name}': '${2:value}',$0
+endsnippet
+
+snippet kw "Keyword argument" i
+${1:name}=${2:$1},$0
+endsnippet
+
+snippet d "Function without docstrings" !b
+def ${1:name}($2):
+    ${0:pass}
+endsnippet
+
+snippet @ "Decorator" b
+@${1:decorated_func}($2)
+def ${3:decorator_func}($4):
+${5:    '''${6:Docstring}'''
+}    ${0:pass}
+endsnippet
+
+snippet pr "Poor man's debugger" b
+print
+print ${1:var}
+raise
+endsnippet
+
+snippet et "Import etree" b
+from lxml import etree
+endsnippet
+
+snippet tos "etree to string" b
+etree.tostring(${1:element})$0
 endsnippet

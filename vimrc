@@ -35,6 +35,11 @@ elseif has("win32")
     set guifont=Consolas:h11:cANSI
 endif
 
+"Increase or decrease font size
+if  has("gui_running")
+    nnoremap <C-Up> :silent let &guifont=substitute(&guifont, '\zs\d\+', '\=submatch(0)+1', '')<CR>
+    nnoremap <C-Down> :silent let &guifont=substitute(&guifont, '\zs\d\+', '\=submatch(0)-1', '')<CR>
+endif
 
 
 "search

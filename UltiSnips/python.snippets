@@ -3,6 +3,11 @@ for ${1:var} in ${2:iterator}:
     $0
 endsnippet
 
+snippet fori "for with index" b
+for i, ${1:var} in enumerate(${2:iterator}):
+    ${0:pass}
+endsnippet
+
 snippet "\[(.+) sl" "String list" r
 `!p
 items = match.group(1).split(' ')

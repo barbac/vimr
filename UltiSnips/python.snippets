@@ -55,3 +55,11 @@ endsnippet
 snippet tos "etree to string" b
 etree.tostring(${1:element})$0
 endsnippet
+
+snippet "W$" "Disable all warnings for current line" r
+# noqa
+endsnippet
+
+snippet " py?l$" "Disable a pylint warning" r
+  # pylint: disable=${1:warning}
+endsnippet

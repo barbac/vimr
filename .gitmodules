@@ -26,3 +26,7 @@
 	path = bundle/jellybeans
 	url = https://github.com/nanotech/jellybeans.vim.git
 	branch = master
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+	branch = master

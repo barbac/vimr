@@ -56,13 +56,12 @@ let g:pymode_lint_checker = "pyflakes,pep8,pylint"
 "pylint lines > 80
 "Docstrings
 "Access protected method
-"Attribute define outside __init__
 "Abstract method not overridden
 "Too many local variables
 "Too many branches
 "TODO_text
 "Locally disabling an error
-let g:pymode_lint_ignore = "E501,C0301,C0110,W0212,W0201,W0223,R0914,R0912,W0511,I0011"
+let g:pymode_lint_ignore = "E501,C0301,C0110,W0212,W0223,R0914,R0912,W0511,I0011"
 
 
 "remaps

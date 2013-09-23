@@ -45,7 +45,11 @@ endsnippet
 snippet pr "Poor man's debugger" b
 print
 print ${1:var}
-raise
+raise Exception
+endsnippet
+
+snippet r "Raise an exception" b
+raise ${1:Exception}($2)$0
 endsnippet
 
 snippet et "Import etree" b

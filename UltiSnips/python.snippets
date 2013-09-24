@@ -67,3 +67,8 @@ endsnippet
 snippet " py?l$" "Disable a pylint warning" r
   # pylint: disable=${1:warning}
 endsnippet
+
+snippet open "Open a file" !b
+with open('${1:name}', '${2:r}') as f:
+    ${3:pass}
+endsnippet

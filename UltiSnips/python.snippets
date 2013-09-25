@@ -13,6 +13,8 @@ snippet "\[(.+) sl" "String list" r
 items = match.group(1).split(' ')
 new_list = []
 for item in items:
+    if item.endswith(','):
+        item = item[:-1]
     new_list.append("'{0}'".format(item))
 snip.rv = '[' + ', '.join(new_list)
 `

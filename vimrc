@@ -67,6 +67,7 @@ let g:pymode_lint_ignore = "E501,C0301,C0110,W0212,W0223,R0914,R0912,W0511,I0011
 "remaps
 "<Esc>x2 to save the file
 inoremap <Esc><Esc> <Esc>:w<CR>
+noremap <Esc><Esc> :w<CR>
 "List buffers
 noremap <leader>l :ls<CR>:b<space>
 

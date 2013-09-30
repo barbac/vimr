@@ -30,3 +30,7 @@
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
 	branch = master
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/elzr/vim-json.git
+	branch = master

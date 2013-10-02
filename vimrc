@@ -73,6 +73,21 @@ noremap <Esc><Esc> :w<CR>
 "List buffers
 noremap <leader>l :ls<CR>:b<space>
 
-
 "Run a script to run tests on save
-autocmd! BufWritePost * silent !tmux send-keys -t 0 testme C-m
+" autocmd! BufWritePost * silent !tmux send-keys -t 0 testme C-m
+let g:testme = 1
+nnoremap <Leader>t :call TestToggle()<CR>
+function! TestToggle()
+    if g:testme
+        let g:testme = 0
+    else
+        let g:testme = 1
+    endif
+endfunction
+
+autocmd! BufWritePost * call Testme()
+function! Testme()
+    if g:testme
+        silent !tmux send-keys -t 0 testme C-m
+    endif
+endfunction

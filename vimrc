@@ -11,6 +11,7 @@ set number "Current line will display its real number.
 set nobackup
 set autochdir "current file's path as working directory
 set fileformats=unix,dos
+set completeopt=menuone,longest,preview
 set wildmenu
 set wildmode=longest:full,full
 

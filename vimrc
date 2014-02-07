@@ -78,7 +78,7 @@ vnoremap <Leader>y "+y
 
 "Run a script to run tests on save
 " autocmd! BufWritePost * silent !tmux send-keys -t 0 testme C-m
-let g:testme = 1
+let g:testme = 0
 nnoremap <Leader>t :call TestToggle()<CR>
 function! TestToggle()
     if g:testme
@@ -91,6 +91,6 @@ endfunction
 autocmd! BufWritePost * call Testme()
 function! Testme()
     if g:testme
-        silent !tmux send-keys -t 0 testme C-m
+        silent !tmux send-keys -t testme testme C-m
     endif
 endfunction

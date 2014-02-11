@@ -75,6 +75,9 @@ noremap <Esc><Esc> :w<CR>
 noremap <leader>l :ls<CR>:b<space>
 "Copy to the clipboard
 vnoremap <Leader>y "+y
+"Paste from the clipboard
+noremap <Leader>p "+p
+noremap <Leader>P "+P
 
 "Run a script to run tests on save
 " autocmd! BufWritePost * silent !tmux send-keys -t 0 testme C-m

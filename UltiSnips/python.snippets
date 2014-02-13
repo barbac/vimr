@@ -78,3 +78,9 @@ snippet open "Open a file" !b
 with open('${1:name}', '${2:r}') as f:
     ${3:pass}
 endsnippet
+
+snippet ow "Open a file for writing" !b
+with open('${1:name}', 'w') as f:
+    ${3:f.write($2)}
+    $0
+endsnippet

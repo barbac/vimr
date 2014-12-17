@@ -54,6 +54,10 @@ set smartcase
 set hlsearch
 set incsearch
 
+"UltiSnips
+let g:UltiSnipsExpandTrigger = '<c-j>'
+let g:UltiSnipsListSnippets = '<c-l>'
+let g:UltiSnipsEditSplit="horizontal"
 
 "python
 let g:pymode_lint_checker = "pyflakes,pep8,pylint"
@@ -99,6 +103,6 @@ endfunction
 autocmd! BufWritePost * call Testme()
 function! Testme()
     if g:testme
-        silent !tmux send-keys -t testme testme C-m
+        silent !tmux send-keys -t main:2.0 testme C-m
     endif
 endfunction

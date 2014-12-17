@@ -28,6 +28,9 @@ set autoindent
 "on the document before saving
 autocmd! BufWritePre * :%s/\s\+$//e
 
+"unfold markdown
+autocmd! BufRead *.md normal zR
+
 "fonts and colors
 syntax on
 colorscheme jellybeans

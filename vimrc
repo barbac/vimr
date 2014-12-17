@@ -11,9 +11,11 @@ set number "Current line will display its real number.
 set nobackup
 set autochdir "current file's path as working directory
 set fileformats=unix,dos
-set completeopt=menuone,longest,preview
+set completeopt=menuone,longest
 set wildmenu
 set wildmode=longest:full,full
+set laststatus=2
+set nowritebackup
 
 
 "indentation

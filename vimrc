@@ -83,7 +83,12 @@ noremap <Esc><Esc> :w<CR>
 "List buffers
 noremap <leader>l :ls<CR>:b<space>
 "Copy to the clipboard
-vnoremap <Leader>y "+y
+if has("unix") && system("uname -s") == "Darwin"
+    vnoremap <Leader>y :<Home>silent <End>w !pbcopy<CR>
+else
+    "linux
+    vnoremap <Leader>y "+y
+endif
 "Paste from the clipboard
 noremap <Leader>p "+p
 noremap <Leader>P "+P

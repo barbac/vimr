@@ -34,3 +34,23 @@
 	path = bundle/markdown
 	url = https://github.com/plasticboy/vim-markdown.git
 	branch = master
+[submodule "bundle/rust"]
+	path = bundle/rust
+	url = https://github.com/wting/rust.vim.git
+	branch = master
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+	branch = master
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+	branch = master
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
+	branch = master
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets
+	branch = master

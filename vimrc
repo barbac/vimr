@@ -88,6 +88,10 @@ vnoremap <Leader>y "+y
 noremap <Leader>p "+p
 noremap <Leader>P "+P
 
+"esc and save from insert mode
+inoremap jj <Esc>
+inoremap jk <Esc>:w<CR>
+
 "Run a script to run tests on save
 " autocmd! BufWritePost * silent !tmux send-keys -t 0 testme C-m
 let g:testme = 0

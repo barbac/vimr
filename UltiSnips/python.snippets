@@ -20,21 +20,37 @@ snip.rv = '[' + ', '.join(new_list)
 `
 endsnippet
 
-snippet di "Dictionary" !b
-${1:dictName} = {$0}
-endsnippet
-
-snippet d "Dictionary key-value pair" i
-'${1:name}': '${2:value}',$0
+snippet dd "Dictionary" b
+${1:dictName} = {$2}$0
 endsnippet
 
 snippet kw "Keyword argument" i
 ${1:name}=${2:$1},$0
 endsnippet
 
+snippet ds "Method" !b
+def ${1:name}(self$2):
+    ${0:pass}
+endsnippet
+
+priority 1
 snippet d "Function without docstrings" !b
 def ${1:name}($2):
     ${0:pass}
+endsnippet
+
+snippet dt "Test method" !b
+def test_${1:name}(self):
+    ${0:pass}
+endsnippet
+
+priority -1
+snippet d "Dictionary key-value pair" w
+'${1:name}': '${2:value}',$0
+endsnippet
+
+snippet dv "Dictionary with vars as key/value" w
+${1:key}: ${2:value},$0
 endsnippet
 
 snippet @ "Decorator" b
@@ -83,4 +99,12 @@ snippet ow "Open a file for writing" !b
 with open('${1:name}', 'w') as f:
     ${3:f.write($2)}
     $0
+endsnippet
+
+snippet False "Toggle False" w
+True
+endsnippet
+
+snippet True "Toggle True" w
+False
 endsnippet

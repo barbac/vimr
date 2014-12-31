@@ -31,6 +31,20 @@ snippet v "var" b
 var ${1:name} = ${2:value};$0
 endsnippet
 
+snippet k "key: value" b
+${1:key}: ${2:value},$0
+endsnippet
+
+snippet ko "key: {object: value}" b
+${1:key}: {${2:key}: ${3:value}}$0
+endsnippet
+
+snippet kf "key: function" b
+${1:key}: function($2) {
+  $0
+}
+endsnippet
+
 
 # React jsx #
 

@@ -81,3 +81,29 @@ endsnippet
 snippet t/ "self closing tag" w
 <${1:div}$2 />$0
 endsnippet
+
+snippet recomponent "React.creatClass" b
+var ${1:Component} = React.createClass({
+  render: function() {
+    $0
+  },
+});
+endsnippet
+
+snippet restate "getInitialState" b
+getInitialState: function() {
+  return {
+    ${1:name}: ${2:value},$0
+  };
+},
+
+endsnippet
+
+snippet reprops "getDefaultProps" b
+getDefaultProps: function() {
+  return {
+    ${1:name}: ${2:value},$0
+  };
+},
+
+endsnippet

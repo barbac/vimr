@@ -61,7 +61,9 @@ let g:UltiSnipsListSnippets = '<c-l>'
 let g:UltiSnipsEditSplit="horizontal"
 
 "python
-let g:pymode_lint_checker = "pyflakes,pep8,pylint"
+let g:pymode_rope_completion = 0
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_lint_checkers=['pyflakes', 'pep8']
 "Suppress errors
 "Ignore lines > 79 chars
 "pylint lines > 80

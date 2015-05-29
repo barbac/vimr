@@ -16,6 +16,7 @@ set wildmenu
 set wildmode=longest:full,full
 set laststatus=2
 set nowritebackup
+set hidden
 
 
 "indentation

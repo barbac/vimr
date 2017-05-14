@@ -122,7 +122,7 @@ function! Testme()
         if exists("g:panel")
             silent execute "!tmux send-keys -t main:" . g:panel . " testme C-m"
         else
-            echo 'set g:panel or will use "2.0" next time.'
+            echo 'let g:panel or will use "2.0" next time.'
             let g:panel="2.0"
         endif
     endif

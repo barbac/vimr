@@ -120,7 +120,7 @@ autocmd! BufWritePost * call Testme()
 function! Testme()
     if g:testme
         if exists("g:panel")
-            silent execute "!tmux send-keys -t main:" . g:panel . " testme C-m"
+            silent execute "!tmux send-keys -t 0:" . g:panel . " testme C-m"
         else
             echo 'let g:panel or will use "2.0" next time.'
             let g:panel="2.0"

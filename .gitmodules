@@ -34,10 +34,6 @@
 	path = bundle/markdown
 	url = https://github.com/plasticboy/vim-markdown.git
 	branch = master
-[submodule "bundle/rust"]
-	path = bundle/rust
-	url = https://github.com/wting/rust.vim.git
-	branch = master
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git

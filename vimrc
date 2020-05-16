@@ -135,3 +135,17 @@ function! Testme()
         endif
     endif
 endfunction
+
+"Toggle transparent background to allow transparent windows
+let g:transparentBG = 0
+function! ToggleTransparentBG()
+    if g:transparentBG
+        highlight Normal ctermbg=233
+        let g:transparentBG = 0
+    else
+        highlight Normal ctermbg=NONE
+        let g:transparentBG = 1
+    endif
+endfunction
+"j for easy touch type
+nnoremap <Leader>j :call ToggleTransparentBG()<CR>

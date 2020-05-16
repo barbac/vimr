@@ -106,6 +106,10 @@ noremap <Leader>P "+P
 inoremap jj <Esc>
 inoremap jk <Esc>:w<CR>
 
+"quick dotfiles editting
+noremap <Leader>ev :e $MYVIMRC<CR>
+noremap <Leader>ez :e ~/.zshrc<CR>
+
 "Run a script to run tests on save
 " autocmd! BufWritePost * silent !tmux send-keys -t 0 testme C-m
 let g:testme = 0

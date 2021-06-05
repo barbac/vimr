@@ -63,6 +63,9 @@ let g:UltiSnipsListSnippets = '<c-l>'
 let g:UltiSnipsEditSplit="horizontal"
 
 "python
+"python-syntax
+let g:python_highlight_all = 1
+
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_lint_checkers=['pyflakes', 'pep8']

@@ -84,6 +84,9 @@ let g:pymode_lint_checkers=['pyflakes', 'pep8']
 
 let g:pymode_lint_ignore = "E501,C0301,C0110,W0212,W0223,R0914,R0912,W0511,I0011,E265,E266,E302,E114,E116"
 
+"YouCompleteMe
+let g:ycm_auto_hover = '' "remove the anoying popup with useless docs.
+
 
 "remaps
 let mapleader=" "
